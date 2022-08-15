@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./output.css" rel="stylesheet">
+    <title>Electron basic todo example</title>
+</head>
+<body>
+    <div class="p-8 text-center">
+        <h1 class="text-center mb-8">Todos</h1>
+        <button id="createTodoBtn" type="button" class="border rounded-md px-4 py-2">
+            Create a New Todo
+        </button>
+        <ul id="todoList"></ul>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
